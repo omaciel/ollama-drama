@@ -1,0 +1,6 @@
+{
+  "response": "Hello! My name is Alex, my favorite food is sushi, and my favorite color is green.",
+  "contains_name": true,
+  "contains_food": true,
+  "contains_color": true
+}

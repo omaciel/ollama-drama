@@ -1,0 +1,21 @@
+(.venv) betelgeuse :: ~/hacking/ollama-drama » pytest -k test_problem1
+====================================================================================== test session starts ======================================================================================
+platform darwin -- Python 3.13.3, pytest-8.3.5, pluggy-1.5.0
+rootdir: /Users/omaciel/hacking/ollama-drama
+plugins: anyio-4.9.0
+collected 3 items                                                                                                                                                                               
+
+tests/test_problem1.py ...                                                                                                                                                                [100%]
+
+======================================================================================= 3 passed in 2.49s =======================================================================================
+(.venv) betelgeuse :: ~/hacking/ollama-drama » pytest -k test_problem1
+====================================================================================== test session starts ======================================================================================
+platform darwin -- Python 3.13.3, pytest-8.3.5, pluggy-1.5.0
+rootdir: /Users/omaciel/hacking/ollama-drama
+plugins: anyio-4.9.0
+collected 3 items                                                                                                                                                                               
+
+tests/test_problem1.py ...                                                                                                                                                                [100%]
+
+======================================================================================= 3 passed in 2.45s =======================================================================================
+(.venv) betelgeuse :: ~/hacking/ollama-drama » 
