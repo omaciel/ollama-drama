@@ -12,7 +12,7 @@ def greet(query):
     }
 
     payload = {
-        "model": "llama3",  # Adjust if you're using another local model
+        "model": "qwen3:0.6b",  # Adjust if you're using another local model
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": query}

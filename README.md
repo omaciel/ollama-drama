@@ -19,7 +19,7 @@ By the end of this workshop, you will:
 Make sure you have the following installed **before** the workshop:
 
 - Python 3.10+
-- [Ollama](https://ollama.com/download) (with at least one model pulled locally, like `llama3`)
+- [Ollama](https://ollama.com/download) (with at least one model pulled locally, like `qwen3:0.6b`)
 - Git
 - A GitHub account
 
@@ -69,19 +69,19 @@ pytest -k test_problem1
 - Pull a model:
 
   ```bash
-  ollama pull llama3
+  ollama pull qwen3:0.6b
   ```
 
 - Run a prompt:
 
   ```bash
-  ollama run llama3 "What is the capital of Peru?"
+  ollama run qwen3:0.6b "What is the capital of Peru?"
   ```
 
 - Summarize a file:
 
   ```bash
-  ollama run llama3 "Summarize this file: $(cat README.md)"
+  ollama run qwen3:0.6b "Summarize this file: $(cat README.md)"
   ```
 
 ---
