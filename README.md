@@ -1,4 +1,4 @@
-# 🐑 Ollama Drama
+# 🦙 Ollama Drama
 
 Welcome to **Ollama Drama**, a hands-on workshop where you'll learn to run, prompt, and customize LLMs locally using [Ollama](https://ollama.com/).
 

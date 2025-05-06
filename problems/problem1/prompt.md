@@ -1,4 +1,4 @@
-# 🐑 Problem 1: Customize the LLM's System Prompt
+# 🦙 Problem 1: Customize the LLM's System Prompt
 
 Your task is to modify the code in `student_code.py` so that the language model responds accurately to specific personal questions.
 

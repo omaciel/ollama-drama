@@ -1,5 +1,5 @@
 
-# 🐑 Problem 2: Create Your Own Customized LLM
+# 🦙 Problem 2: Create Your Own Customized LLM
 
 In this exercise, you'll personalize your own local language model by modifying a `Modelfile` and using `ollama create` to generate a custom model.
 
@@ -42,7 +42,7 @@ In this exercise, you'll personalize your own local language model by modifying 
 
 ---
 
-#### 💡 Hint
+### 💡 Hint
 
 Ollama’s `Modelfile` lets you bake your own system prompt directly into the model. Once created, your custom model will always respond with the baked-in answers — unless overridden by an explicit system prompt in your code.
 
