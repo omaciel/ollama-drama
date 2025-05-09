@@ -4,14 +4,11 @@ import requests
 
 def ask_ollama(prompt):
     url = "http://localhost:11434/api/chat"
-    headers = {
-        'accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-    model = "" # UPDATE TO YOUR MODEL
-    system_name = "" # CHANGE
-    system_favorite_food = "" # CHANGE
-    system_favorite_color = "" # CHANGE
+    headers = {"accept": "application/json", "Content-Type": "application/json"}
+    model = "qwen3:0.6b"
+    system_name = "Paws-itive"
+    system_favorite_food = "Korean Cucumber Salad "
+    system_favorite_color = "Pink"
     system_prompt = f"""
     Your name is {system_name}.
     Your favorite food is {system_favorite_food}.
@@ -22,8 +19,8 @@ def ask_ollama(prompt):
         "model": model,
         "messages": [
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt}
-        ]
+            {"role": "user", "content": prompt},
+        ],
     }
 
     response = requests.post(url, headers=headers, json=payload, stream=True)
@@ -36,4 +33,3 @@ def ask_ollama(prompt):
             result += data.get("message", {}).get("content", "")
 
     return result.strip()
-
