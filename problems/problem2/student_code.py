@@ -8,14 +8,13 @@ def ask_ollama(prompt):
         'accept': 'application/json',
         'Content-Type': 'application/json'
     }
-    model = "" # UPDATE TO YOUR MODEL
-    system_prompt = "You are a helpful LLM."
+    model = "mario-model" # UPDATE TO YOUR MODEL
+#    system_prompt = "You are a helpful LLM."
 
     payload = {
         "model": model,
         "messages": [
-            # Hmmm... should this line be here?
-            {"role": "system", "content": system_prompt},
+
             {"role": "user", "content": prompt}
         ]
     }
