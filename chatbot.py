@@ -10,7 +10,7 @@ def greet(query):
     headers = {"accept": "application/json", "Content-Type": "application/json"}
 
     payload = {
-        "model": "qwen3:0.6b",  # Adjust if you're using another local model
+        "model": "llama3.2",  # Adjust if you're using another local model
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": query},

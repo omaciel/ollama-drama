@@ -5,10 +5,10 @@ import requests
 def ask_ollama(prompt):
     url = "http://localhost:11434/api/chat"
     headers = {"accept": "application/json", "Content-Type": "application/json"}
-    model = ""  # UPDATE TO YOUR MODEL
-    system_name = ""  # CHANGE
-    system_favorite_food = ""  # CHANGE
-    system_favorite_color = ""  # CHANGE
+    model = "llama3.2"  # UPDATE TO YOUR MODEL
+    system_name = "Helen 'The Wizard' Bailey"  # CHANGE
+    system_favorite_food = "pizza"  # CHANGE
+    system_favorite_color = "teal"  # CHANGE
     system_prompt = f"""
     Your name is {system_name}.
     Your favorite food is {system_favorite_food}.
