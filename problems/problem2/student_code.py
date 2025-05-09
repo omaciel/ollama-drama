@@ -15,7 +15,7 @@ def ask_ollama(prompt):
         "model": model,
         "messages": [
             # Hmmm... should this line be here?
-            {"role": "system", "content": system_prompt},
+   #         {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt}
         ]
     }
