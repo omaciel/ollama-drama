@@ -2,6 +2,10 @@
 
 Welcome to **Ollama Drama**, a hands-on workshop where you'll learn to run, prompt, and customize LLMs locally using [Ollama](https://ollama.com/).
 
+## Slides
+
+https://docs.google.com/presentation/d/1IMftHOoGJ6h9oSLOaH-rkXNdepZ-EM_Mfxn6FmMtfC0/edit#slide=id.p
+
 ## 🎯 Goals
 
 By the end of this workshop, you will:
