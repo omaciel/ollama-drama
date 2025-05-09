@@ -2,9 +2,9 @@ import importlib.util
 import os
 import pytest
 
-name = "Mario"
-favorite_food = "Lasagna"
-favorite_color = "Red"
+name = "Helen"
+favorite_food = "pizza"
+favorite_color = "teal"
 
 
 # Helper to load student_code module
