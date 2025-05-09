@@ -8,10 +8,10 @@ def ask_ollama(prompt):
         'accept': 'application/json',
         'Content-Type': 'application/json'
     }
-    model = "" # UPDATE TO YOUR MODEL
-    system_name = "" # CHANGE
-    system_favorite_food = "" # CHANGE
-    system_favorite_color = "" # CHANGE
+    model = "nathan" # UPDATE TO YOUR MODEL
+    system_name = "Nathan" # CHANGE
+    system_favorite_food = "Leftovers" # CHANGE
+    system_favorite_color = "Purple" # CHANGE
     system_prompt = f"""
     Your name is {system_name}.
     Your favorite food is {system_favorite_food}.

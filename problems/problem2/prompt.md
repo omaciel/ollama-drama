@@ -17,13 +17,13 @@ In this exercise, you'll personalize your own local language model by modifying 
 3. Use the [`ollama create`](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#create-a-model) command to generate your custom model locally:
 
    ```bash
-   ollama create mario-model -f problems/problem2/Modelfile
+   ollama create nathan -f problems/problem2/Modelfile
    ```
 
 4. Verify that the `student_code.py` script uses your new model name in the API payload:
 
    ```python
-   "model": "mario-model"
+   "model": "nathan"
    ```
 
 5. ⚠️ **Important Note**: The current `student_code.py` includes a hardcoded system prompt. This will override your customized model's built-in behavior and cause the tests to fail.
