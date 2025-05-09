@@ -3,24 +3,22 @@ import requests
 import gradio as gr
 
 # Ollama local API endpoint
-api = 'http://localhost:11434/api/chat'
+api = "http://localhost:11434/api/chat"
+
 
 def greet(query):
-    headers = {
-        'accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
+    headers = {"accept": "application/json", "Content-Type": "application/json"}
 
     payload = {
         "model": "qwen3:0.6b",  # Adjust if you're using another local model
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": query}
-        ]
+            {"role": "user", "content": query},
+        ],
     }
 
     response = requests.post(api, headers=headers, json=payload, stream=True)
-    
+
     result = ""
     try:
         for line in response.iter_lines():
@@ -33,13 +31,14 @@ def greet(query):
 
     return result
 
+
 # Gradio interface
 demo = gr.Interface(
     fn=greet,
     inputs=gr.Textbox(label="Ask something..."),
     outputs=gr.Textbox(label="Ollama Drama says:"),
     title="🐑 Ollama Drama Chatbot",
-    description="Talk to your local llama! Powered by Ollama running locally."
+    description="Talk to your local llama! Powered by Ollama running locally.",
 )
 
 demo.launch()
