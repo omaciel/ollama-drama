@@ -12,7 +12,7 @@ def greet(query):
     }
 
     payload = {
-        "model": "qwen3:0.6b",  # Adjust if you're using another local model
+        "model": "qwen3:1.7b",  # Adjust if you're using another local model
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": query}
@@ -20,7 +20,7 @@ def greet(query):
     }
 
     response = requests.post(api, headers=headers, json=payload, stream=True)
-    
+
     result = ""
     try:
         for line in response.iter_lines():
