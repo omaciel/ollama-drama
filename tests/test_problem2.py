@@ -4,7 +4,7 @@ import pytest
 
 name = "Mario"
 favorite_food = "Lasagna"
-favorite_color = "Red"
+favorite_color = "red"
 
 # Helper to load student_code module
 def load_student_code():
