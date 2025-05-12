@@ -4,20 +4,17 @@ import requests
 
 def ask_ollama(prompt):
     url = "http://localhost:11434/api/chat"
-    headers = {
-        'accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-    model = "" # UPDATE TO YOUR MODEL
-    system_prompt = "You are a helpful LLM."
+    headers = {"accept": "application/json", "Content-Type": "application/json"}
+    model = "mario-model"  # UPDATE TO YOUR MODEL
+    # system_prompt = "You are a helpful LLM."
 
     payload = {
         "model": model,
         "messages": [
             # Hmmm... should this line be here?
-            {"role": "system", "content": system_prompt},
+            # {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt}
-        ]
+        ],
     }
 
     response = requests.post(url, headers=headers, json=payload, stream=True)
