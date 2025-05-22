@@ -100,8 +100,7 @@ If you get stuck:
 
 We'll add extra challenges if you complete the first one early, including:
 
-- Embedding generation
-- RAG (retrieval-augmented generation) basics
+- Publishing your custom model to Ollama.com
 
 ---
 

@@ -1,0 +1,11 @@
+(.venv) betelgeuse :: ~/hacking/ollama-drama » pytest -k test_bonus
+================================================================= test session starts ==================================================================
+platform darwin -- Python 3.13.3, pytest-8.3.5, pluggy-1.5.0
+rootdir: /Users/omaciel/hacking/ollama-drama
+plugins: anyio-4.9.0
+collected 8 items / 7 deselected / 1 selected                                                                                                          
+
+tests/test_bonus.py .                                                                                                                            [100%]
+
+=========================================================== 1 passed, 7 deselected in 0.17s ============================================================
+(.venv) betelgeuse :: ~/hacking/ollama-drama »
