@@ -49,7 +49,7 @@ Make sure you have the following installed **before** the workshop:
   bash ./preflight.sh
   ```
 
-  If any of the recommended  LLMs are missing, the preflight check will ask if you want to pull them.
+  If any of the recommended LLMs are missing, the preflight check will ask if you want to pull them.
 ---
 
 ## 🧪 Solving Problems
