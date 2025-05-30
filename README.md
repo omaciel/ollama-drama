@@ -43,6 +43,13 @@ Make sure you have the following installed **before** the workshop:
    pip install -r requirements.txt
    ```
 
+4. **Execute Preflight Checks:**
+
+  ```bash
+  bash ./preflight.sh
+  ```
+
+  If any of the recommended LLMs are missing, the preflight check will ask if you want to pull them.
 ---
 
 ## 🧪 Solving Problems
