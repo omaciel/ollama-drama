@@ -9,8 +9,8 @@ By the end of this workshop, you will:
 - Run and interact with language models locally using the `ollama` CLI
 - Use Python (`chatbot.py`) to call Ollama’s API
 - Create a custom model using a `Modelfile`
+- Pass tests using pytest
 - Solve programming challenges and submit them via Pull Request
-- Pass automated tests triggered on GitHub
 
 ---
 
